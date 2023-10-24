@@ -124,7 +124,7 @@ section {
   left: 0;
   right: 0;
   height: calc(100vh - 8.5rem);
-  background: #fff;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1000;
   display: none;
 }
@@ -132,28 +132,31 @@ section {
   display: block;
 }
 .search-form-container form {
-  height: 7rem;
+  height: 5rem;
   border-bottom: 0.2rem solid #130f40;
   width: 100%;
   display: flex;
-  align-items: center;
   animation: fadeUp 0.4s linear;
 }
 .search-form-container form input {
   height: 100%;
   width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #130f40;
   text-transform: none;
-  padding-right: 1rem;
+  padding-inline: 0.9rem;
 }
 .search-form-container form input::-webkit-search-cancel-button {
   display: none;
 }
 .search-form-container form label {
+  display: flex;
+  align-items: center;
   font-size: 3rem;
   cursor: pointer;
+  padding-inline: 0.9rem;
   color: #130f40;
+  background-color: #fff;
 }
 .search-form-container form label:hover {
   color: #27ae60;
@@ -167,7 +170,7 @@ section {
   z-index: 1000;
   height: calc(100vh - 8.5rem);
   background: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 8rem;
   display: none;
 }
@@ -278,7 +281,7 @@ section {
 }
 .login-form-container form {
   margin: 2rem auto;
-  max-width: 40rem;
+  max-width: 45rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -652,7 +655,6 @@ section {
   width: 100%;
   margin-top: 0.5rem;
   padding: 1rem 1.2rem;
-  width: 100%;
   border-radius: 0.5rem;
   font-size: 1.6rem;
   text-transform: none;
@@ -755,7 +757,6 @@ section {
 .footer .newsletter form {
   max-width: 70rem;
   margin: 1rem auto;
-  max-width: 70rem;
   display: flex;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -801,9 +802,7 @@ section {
 }
 .footer .box-container .box a:hover {
   color: #27ae60;
-}
-.footer .box-container .box a:hover i {
-  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .footer .box-container .box a i {
   padding-right: 0.5rem;
